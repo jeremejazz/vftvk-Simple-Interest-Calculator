@@ -4,13 +4,19 @@
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div id = "box">
+            <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            Amount <input type="number"  id="principal">  <br/>
+            Rate <input type="range"  id="rate">  <br/>
+            No. of Years <input type="number"  id="years">  <br/>
+            Interest : <span id="result"></span><br>
 
-        <button onclick="compute()">Compute</button>
+            <button onclick="compute()">Compute</button>
+            <div id="footer">
+                &copy; Everyone Can Get Rich
+            </div>
+        </div>
+        
     </body>
 </html>

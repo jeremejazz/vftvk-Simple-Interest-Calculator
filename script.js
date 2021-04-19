@@ -15,8 +15,9 @@ function compute()
     let date = new Date();
     let total_years = date.getFullYear() + years;
 
-    if(isNaN(principal)){
-        alert("Invalid Principal");
+    if(isNaN(principal) || principal <= 0 ){
+        alert("Enter a positive number");
+        S("#principal").focus();
         return;
     }else if(isNaN(years)){
         alert("Invalid Years");

@@ -6,13 +6,25 @@
     <body>
         <div id = "box">
             <h1>Simple Interest Calculator</h1>
+            <div id="form">
+                
+                <label for="principal">Amount</label> <input min="1" type="number" id="principal">   
+                <label>Rate</label> <span class="input"><input type="range"  id="rate" step="0.25" value="0"> <span id="rate_val">0</span>% </span>
+                <label for="years">No. of Years</label> <input min="1" type="number" id="years" list="list_yrs" >  <br/>
+                <datalist id="list_yrs">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                </datalist>
 
-            Amount <input type="number"  id="principal">  <br/>
-            Rate <input type="range"  id="rate">  <br/>
-            No. of Years <input type="number"  id="years">  <br/>
-            Interest : <span id="result"></span><br>
+                <button onclick="compute()">Compute Interest</button>      
+                <p id="result"></p>  
+            </div>    
+      
 
-            <button onclick="compute()">Compute</button>
             <div id="footer">
                 &copy; Everyone Can Get Rich
             </div>

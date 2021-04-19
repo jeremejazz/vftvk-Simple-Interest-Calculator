@@ -26,10 +26,10 @@ function compute()
     }
 
     interest = principal * ( rate * 0.01 ) * years;
-    let message = `If you deposit ${principal} <br/>
-                    at an interest rate of ${rate}% <br/>
-                    You will receive an amount of ${interest}<br/>
-                    in the year ${total_years}
+    let message = `If you deposit <span class="highlight">${principal}</span> <br/>
+                    at an interest rate of <span class="highlight">${rate}%</span>  <br/>
+                    You will receive an amount of <span class="highlight">${interest}</span> <br/>
+                    in the year <span class="highlight">${total_years}</span> 
     `;
     result.innerHTML = message;
 }
